@@ -1,4 +1,28 @@
-@media (max-width: 1400px) and (min-width: 991px) {
+@media only screen and (min-width: 1440px) {
+  .about-modal .about-us-modal-img-1 {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .about-modal .about-us-modal-text-3 {
+    margin-top: 34px;
+  }
+  .about-modal .about-us-modal-img-2-wrapper {
+    text-align: center;
+  }
+  .about-modal .about-us-modal-img-2 {
+    width: 40%;
+    margin-top: 0px;
+  }
+  .about-modal .about-us-modal-img-3 {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .about-modal .about-us-modal-img-4 {
+    width: 100%;
+    margin-top: 23px;
+  }
+}
+@media only screen and (max-width: 1400px) and (min-width: 991px) {
   /**
 	 * ========================================
 	 * Portfolio Section Single Image Style
@@ -22,6 +46,26 @@
 	 */
   .link-list {
     right: 78px;
+  }
+
+  .about-modal .about-us-modal-img-1 {
+    width: 100%;
+    /* margin-top: 32px; */
+  }
+  .about-modal .about-us-modal-text-3 {
+    margin-top: 25px;
+  }
+  .about-modal .about-us-modal-img-2 {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .about-modal .about-us-modal-img-3 {
+    width: 100%;
+    /* margin-top: 30px; */
+  }
+  .about-modal .about-us-modal-img-4 {
+    width: 100%;
+    margin-top: 23px;
   }
 }
 @media (max-width: 991px) {
@@ -64,6 +108,34 @@
     vertical-align: middle;
     float: none;
   }
+  .about-modal .about-us-modal-img-1-wrapper {
+    text-align: center;
+  }
+  .about-modal .about-us-modal-img-1 {
+    width: 35%;
+    margin-top: 0px;
+  }
+  .about-modal .about-us-modal-img-2-wrapper {
+    text-align: center;
+  }
+  .about-modal .about-us-modal-img-2 {
+    width: 35%;
+    margin-top: 0px;
+  }
+  .about-modal .about-us-modal-img-3-wrapper {
+    text-align: center;
+  }
+  .about-modal .about-us-modal-img-3 {
+    width: 35%;
+    margin-top: 0px;
+  }
+  .about-modal .about-us-modal-img-4-wrapper {
+    text-align: center;
+  }
+  .about-modal .about-us-modal-img-4 {
+    width: 35%;
+    margin-top: 0px;
+  }
 }
 @media (max-width: 767px) {
   .section-heading {
@@ -81,7 +153,7 @@
 	 */
   .main-navbar-top .nav-trigger {
     left: auto;
-    right: 15px;
+    right: 25px;
     -o-transform: translate3d(0, 0px, 0);
     -ms-transform: translate3d(0, 0px, 0);
     -moz-transform: translate3d(0, 0px, 0);
@@ -104,16 +176,70 @@
   .main-navbar-top .navbar-collapse .navbar-nav li .btn-nav {
     line-height: 30px;
   }
+  /* The side navigation menu */
+  .navbar-side {
+    height: 100%; /* 100% Full-height */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: rgba(247, 203, 70, 0.88); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  .navbar-side a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .navbar-side a:hover {
+    color: #31a700;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .navbar-side .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .collapsed-sidenav {
+    width: 0;
+  }
+
   /**
 	 * ========================================
 	 * Home Section Style
 	 * ========================================
-	 */
+   */
+
+  .about-landing {
+    display: none;
+  }
   .home-section .heading-outer .p-t-40,
   .home-section .heading-outer .p-l-40,
   .home-section .heading-outer .p-r-40,
   .home-section .heading-outer .p-b-40 {
     padding: 15px;
+  }
+
+  /**
+	 * ========================================
+	 * Categories Section Style
+	 * ========================================
+	 */
+
+  .categories-section .outting-image-section-right,
+  .categories-section .outting-image-section-left {
+    display: none;
   }
   /**
 	 * ========================================
@@ -208,10 +334,10 @@
   }
   /**
 	 * ========================================
-	 * Testimonials Section Style
+	 * Category Landing Section Style
 	 * ========================================
 	 */
-  .testimonial-section .testimonial-wrapper .item {
+  .home-section .category-slider-wrapper .item {
     padding: 0 20px;
   }
   /**
@@ -227,6 +353,13 @@
   .team-member:last-child .item-inner {
     margin-bottom: 0px;
   }
+
+  /**
+	 * ========================================
+	 * About us Section Style
+	 * ========================================
+   */
+
   /**
 	 * ========================================
 	 * Contact Section Style
@@ -240,5 +373,127 @@
   }
   .contact-footer .each-section:last-child .each-section-inner {
     margin-bottom: 0px;
+  }
+
+  .about-modal .about-us-modal-img-1-wrapper {
+    text-align: center;
+  }
+  .about-modal .about-us-modal-img-1 {
+    width: 35%;
+    margin-top: 0px;
+  }
+  .about-modal .about-us-modal-img-2-wrapper {
+    text-align: center;
+  }
+  .about-modal .about-us-modal-img-2 {
+    width: 35%;
+    margin-top: 0px;
+  }
+  .about-modal .about-us-modal-img-3-wrapper {
+    text-align: center;
+  }
+  .about-modal .about-us-modal-img-3 {
+    width: 35%;
+    margin-top: 0px;
+  }
+  .about-modal .about-us-modal-img-4-wrapper {
+    text-align: center;
+  }
+  .about-modal .about-us-modal-img-4 {
+    width: 35%;
+    margin-top: 0px;
+  }
+  .modal-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .categories-section .outting-image-section-right,
+  .categories-section .outting-image-section-left {
+    display: none;
+  }
+  .semi-dark-background.about-section {
+  }
+  .semi-dark-background.contact-us-section {
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-section {
+    position: relative;
+    height: 100vh;
+  }
+  /* .home-section .inner-container{
+    padding-top: 81px;
+    padding-bottom: 81px;
+  } */
+  .home-section .category-slider-wrapper .item .category-slider-img-group-1 {
+    /* margin-left: 160px; */
+  }
+  .home-section .category-slider-wrapper .item .category-slider-img-group-2 {
+    /* margin-left: 160px; */
+  }
+  .home-section .category-slider-wrapper .read-more {
+    margin-right: -65px;
+  }
+  .home-section .category-slider-wrapper .item {
+    /* height: 335px; */
+  }
+
+  .categories-section .features-image-outer {
+    margin-left: 70px;
+  }
+  .categories-section .features-image-outer img {
+    height: 399px;
+  }
+  .categories-section .outting-image-section-right,
+  .categories-section .outting-image-section-left {
+    display: block;
+  }
+
+  .categories-section #services-1 .services-content-outer {
+    margin: 85px 0px;
+  }
+  .categories-section #services-2 .services-content-outer {
+    margin: 85px 0px;
+  }
+  .categories-section #services-3 .services-content-outer {
+    margin: 85px 0px;
+  }
+  .categories-section #services-4 .services-content-outer {
+    margin: 85px 0px;
+  }
+  .semi-dark-background.about-section {
+  }
+  .tab-pane .product-pane-header {
+    margin: 0px 230px;
+  }
+  .semi-dark-background.contact-us-section {
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .about-modal .about-us-modal-img-1 {
+    width: 100%;
+    /* margin-top: 32px; */
+  }
+  .about-modal .about-us-modal-img-2 {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .about-modal .about-us-modal-img-3 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .about-modal .about-us-modal-img-4 {
+    width: 100%;
+    margin-top: 23px;
+  }
+  
+  .modal-image {
+    width: 100%;
   }
 }

@@ -91,7 +91,6 @@
 .customNavigation{
   text-align: center;
 }
-//use styles below to disable ugly selection
 .customNavigation a{
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -100,16 +99,6 @@
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
-
-
-
-
-
-
-
-
-
 
 /* 
  *  Owl Carousel CSS3 Transitions 
